@@ -20,8 +20,8 @@ public class BankController {
 	BankService bankserv;
 
 	@PostMapping(value = "/addBank")
-	public String addBank(@RequestBody Bank usr) {
-		return bankserv.addBank(usr);
+	public String addBank(@RequestBody Bank user) {
+		return bankserv.addBank(user);
 	}
 
 	@GetMapping(value = "/getById/{id}")
